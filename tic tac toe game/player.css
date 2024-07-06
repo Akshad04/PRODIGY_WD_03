@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #FF4500;
+    font-size: 45px;
+}
+
+body {
+    background: url('background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 40%;
+    border: 2px solid #8A2BE2;
+    font-size: 10vmin;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;   
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.box:hover {
+    background-color: rgba(138, 43, 226, 0.2); /* Change color on hover */
+}
+
+.box.x-marker {
+    color: #FF8C00;
+}
+
+.box.o-marker {
+    color: #32CD32;
+}
+
+#reset-btn {
+    padding: 1.25rem;
+    font-size: 1.25rem;
+    background-color: #20B2AA;
+    color: aliceblue;
+    border-radius: 1.5rem;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#new-btn {
+    padding: 1.25rem;
+    font-size: 1.25rem;
+    background-color: #20B2AA;
+    color: aliceblue;
+    border-radius: 1.5rem;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#msg {
+    color: red;
+    font-size: 8vmin;
+}
+
+.msg-container {
+    height: 30vmin;
+}
+
+.hide {
+    display: none;
+}
+
+
